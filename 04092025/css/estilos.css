@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(177, 255, 203);
+}
+h1{
+    color: rgb(68, 68, 255);
+    font-size: 5em;
+    text-align: center;
+}
+p{
+    color: rgb(155, 49, 255);
+    font-size: 30px;
+}
+/* CLASES */
+.parrafo1{
+    color: rgb(252, 77, 77);
+    background-color: rgb(255, 155, 83);
+    font-size: 3em;
+}
+/* DECLARACION --> # */
+#parrafo2{
+    text-align: center;
+    background-color: rgb(128, 186, 245);
+}
