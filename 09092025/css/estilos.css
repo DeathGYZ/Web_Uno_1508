@@ -1,0 +1,42 @@
+
+/* Cuerpo */
+body{
+    font-family:'Times New Roman', Times, serif;
+    margin: 40px;
+    padding: 0px;
+    background-color: rgb(185, 231, 216);
+}
+
+/* Encabezado */
+header{
+    background-color: rgb(231, 173, 231);
+    border-radius: 15px;
+    color:rgb(163, 34, 34);
+    padding: 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1{
+    margin: 0px;
+    padding-left: 20px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 20px;  
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 25px;
+}
+
+section{
+    padding: 20px;
+    margin: 15px;
+    background-color: rgb(188, 136, 236);
+    border-radius: 15px;
+    box-shadow: 8px 8px 0px rgba(0,0,0,0.2);
+}
