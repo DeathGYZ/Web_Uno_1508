@@ -1,0 +1,46 @@
+<?php
+    include("db.php");
+    if($_SERVER["REQUEST_METHOD"] === "POST"){
+        $nombre = $_POST["nombre"];
+        $email = $_POST["email"];
+        $telefono = $_POST["telefono"];
+
+        $sql = "INSERT INTO usuarios(nombre, email, telefono) values ('$nombre', '$email', '$telefono')";
+            if($conexion -> query($sql) == TRUE){
+                header("Location: ./create.php");
+                exit();
+            }else{
+                echo "Error" . $sql . "<br>" . $conexion -> error;
+            }
+    }
+    include ("headerS.php");
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Usuario</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header center orange-text">Agregar Usuario</h1>
+        <form method="post" action="create.php" >
+            <label>Nombre:</label>
+            <input type="text" name = "nombre" required> <br>
+            <label>Email:</label>
+            <input type="email" name = "email" required> <br>
+            <label>Teléfono:</label>
+            <input type="text" name = "telefono" required> <br> <br>
+            <input type="submit" value = "Agregar Usuario" class="btn">
+        </form>
+        <br>
+        <a href="../index.php" class="btn">Volver a la lista </a>
+        <br><br>
+    </div>
+</body>
+</html>
+
+<?php  
+    include ("footerS.php");
+?>

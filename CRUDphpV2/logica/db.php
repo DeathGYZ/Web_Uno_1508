@@ -1,21 +1,11 @@
 <?php
-    /*Hosting
-    $host = 'sql103.infinityfree.com';
-    $user = 'if0_40222527';
-    $password = 'jptACTO10It22Py';
-    $dbname = 'if0_40222527_ico';*/
-
-    //Local
     $host = 'localhost:3306';
     $user = 'root';
     $password = '1234';
     $dbname = 'crud_app';
-
+    
     $conexion = new mysqli($host, $user, $password, $dbname);
     if($conexion -> connect_error){
         die('Error en la conexión a la DB: '.$conexion -> connect_error);
-    }else{
-        echo 'Conexión Realizada';
     }
-    
 ?>
